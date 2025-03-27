@@ -11,6 +11,9 @@ bot = commands.Bot(command_prefix="/", intents=intents)
 
 @bot.command()
 async def ping(ctx):
+    """
+    Te dice la latencia del bot
+    """
     await ctx.send(f"🏓 Pong con latencia: {bot.latency}")
 
 bot.run(TOKEN)
